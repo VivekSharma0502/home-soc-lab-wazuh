@@ -19,3 +19,4 @@
 | `04a-noise-before.png` | Alert-noise baseline by rule |
 | `04b-noise-root-causes.png` | Root cause of each noisy rule |
 | `04c-tuning-validation.png` | Benign PSScriptPolicyTest silenced, malicious evil_payload.ps1 still alerts |
+| `04d-noise-after.png` | Alerts per hour after tuning (~140 → 33) |

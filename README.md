@@ -4,7 +4,7 @@ A self-built Security Operations Center lab: I attacked my own Windows endpoint 
 checked what a SIEM catches **by default**, found the blind spots, and closed them with
 **custom telemetry, detection rules (mapped to MITRE ATT&CK) and false-positive tuning**.
 
-> **Result:** 4 detection gaps found and closed, 5 custom detection rules, 6 tuning rules —
+> **Result:** 4 detection gaps found and closed, 5 custom detection rules, 6 tuning rules that cut idle alert noise by **~77%** —
 > including catching a persistence technique that **bypassed Microsoft Defender**.
 
 ---
@@ -39,7 +39,7 @@ flowchart LR
 | 3b | Backdoor admin account | T1136.001 / T1098 | ✅ 60154 (lvl 12) | — |
 | 3c | `schtasks` persistence | T1053.005 | 🛡️ Defender blocked, SIEM blind | ✅ Defender log onboarded (lvl 12) |
 | 3d | `Register-ScheduledTask` — **Defender bypass** | T1053.005 | ❌ Invisible everywhere | ✅ Event 4698 + rules **100119 / 100120** (lvl 12) |
-| — | Alert tuning | — | ~730 alerts / day from one idle VM, level-15 FPs | ✅ Root causes of **563 / 730 (~77%)** fixed or suppressed, **0** level-15 FPs |
+| — | Alert tuning | — | ~140 alerts / idle hour, level-15 FPs | **33 alerts / hour (~77% less)**, 0 level-15 FPs |
 
 ### Highlights
 - **Multi-layer root-causing:** the port scan was invisible because of *two* defaults — Windows
