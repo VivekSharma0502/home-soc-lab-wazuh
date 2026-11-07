@@ -53,6 +53,30 @@ flowchart LR
 
 ---
 
+## Evidence
+
+**Dashboard: alerts mapped to MITRE ATT&CK**
+![Dashboard](screenshots/00-dashboard-overview.png)
+
+**Attack 1: port scan from Kali, caught by custom rule 100100 / 100101**
+![Port scan detected](screenshots/01b-portscan-detected.png)
+
+**Attack 2: a successful brute force flagged by custom rule 100110 (not detected by default)**
+![Brute force succeeded](screenshots/02c-bruteforce-succeeded.png)
+
+**Attack 3: Defender bypassed with Register-ScheduledTask...**
+![Defender bypass](screenshots/03e-defender-bypass.png)
+
+**...but the SIEM still caught it (custom rule 100120, level 12)**
+![Persistence detected](screenshots/03g-persistence-detected.png)
+
+**Tuning validated: benign PowerShell noise silenced, malicious script still alerts**
+![Tuning validation](screenshots/04c-tuning-validation.png)
+
+All screenshots: [`screenshots/`](screenshots/)
+
+---
+
 ## Repository
 
 ```
