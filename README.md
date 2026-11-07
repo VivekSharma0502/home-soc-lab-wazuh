@@ -39,7 +39,7 @@ flowchart LR
 | 3b | Backdoor admin account | T1136.001 / T1098 | ✅ 60154 (lvl 12) | — |
 | 3c | `schtasks` persistence | T1053.005 | 🛡️ Defender blocked, SIEM blind | ✅ Defender log onboarded (lvl 12) |
 | 3d | `Register-ScheduledTask` — **Defender bypass** | T1053.005 | ❌ Invisible everywhere | ✅ Event 4698 + rules **100119 / 100120** (lvl 12) |
-| — | Alert tuning | — | ~140 alerts / idle hour, level-15 FPs | **TODO** alerts / hour (**TODO %** less), 0 critical FPs |
+| — | Alert tuning | — | ~730 alerts / day from one idle VM, level-15 FPs | ✅ Root causes of **563 / 730 (~77%)** fixed or suppressed, **0** level-15 FPs |
 
 ### Highlights
 - **Multi-layer root-causing:** the port scan was invisible because of *two* defaults — Windows

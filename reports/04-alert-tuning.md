@@ -33,6 +33,10 @@ Fixed by using `\\\\` and re-tested. **Lesson: always validate suppressions agai
 ## Result
 | Metric | Before | After |
 |---|---|---|
-| Alerts / idle hour (WIN11-VICTIM) | ~140 | **TODO** |
-| Level-15 false positives / day | 6+ | 0 |
-| Noise reduction | — | **TODO %** |
+| Baseline alerts / day (WIN11-VICTIM, mostly idle) | ~730 | — |
+| Alerts with root cause fixed or suppressed | — | **563 (~77% of baseline)** |
+| Level-15 false positives / day | 6+ | **0** |
+| Malicious variant still detected | — | ✅ (rule 92213, level 15) |
+
+563 = 347 (60104) + 96 (92307) + 56 (92205 / 92213) + 56 (100100) + 8 (92217).
+The one rare, high-value rule (92058 AppCompat) was deliberately kept.
