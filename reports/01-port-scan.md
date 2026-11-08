@@ -34,6 +34,8 @@ Wazuh showed **zero events** from `192.168.50.7`. An attacker could map the netw
 Re-ran the scan → 572 rule-100100 events from `192.168.50.7` across random ports and a
 level-10 correlation alert for the source IP.
 
+![Rule 100101 port-scan correlation alert](../screenshots/01c-portscan-correlation.png)
+
 ## 6. Tuning (later)
 Rule 100100 initially also fired on **outbound** drops and **late replies to ephemeral ports**
 (e.g. Microsoft servers replying to port 59748). Fixed by matching only

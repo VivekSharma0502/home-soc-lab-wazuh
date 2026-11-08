@@ -59,7 +59,7 @@ flowchart LR
 ![Dashboard](screenshots/00-dashboard-overview.png)
 
 **Attack 1: port scan from Kali, caught by custom rule 100100 / 100101**
-![Port scan detected](screenshots/01b-portscan-detected.png)
+![Port scan correlation alert](screenshots/01c-portscan-correlation.png)
 
 **Attack 2: a successful brute force flagged by custom rule 100110 (not detected by default)**
 ![Brute force succeeded](screenshots/02c-bruteforce-succeeded.png)

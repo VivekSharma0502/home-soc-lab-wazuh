@@ -6,6 +6,7 @@
 | `00b-agent-active.png` | WIN11-VICTIM agent connected and active |
 | `01a-nmap-scan.png` | Kali nmap SYN scan (1000 filtered ports) |
 | `01b-portscan-detected.png` | Custom rule 100100 catching blocked connections from Kali (192.168.50.7) |
+| `01c-portscan-correlation.png` | Correlation rule 100101: "Possible port scan … from 192.168.50.7" (level 10, T1046) |
 | `02a-lockout.png` | NetExec brute force stopped by Windows account lockout |
 | `02b-default-bruteforce-alerts.png` | Wazuh default alerts: logon failures, multiple failures, account locked out |
 | `02c-bruteforce-succeeded.png` | Custom rule 100110: "Brute force SUCCEEDED" (level 12) |
